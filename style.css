@@ -1,3 +1,94 @@
-h1 {
-    background-color: brown;
+body {height: 100vh; margin:0; display: flex; flex-direction: column; font-family: Helvetica, sans-serif;}
+
+main {
+    max-width: 700px;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    /* scroll horizontally as needed
+    overflow-x: auto; */
+    padding: 30px 0px;
+}
+
+#card {
+    margin: 0;
+    background: #eee;
+    padding: 1em;
+    border-radius: 1em;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+h1.text-shadow {
+    color: darkred;
+    text-shadow: 1px 1px 3px red;
+}
+
+div.shadow {
+    box-shadow: 1px 1px 3px lightblue;
+    width: 200px;
+    padding: 10px;
+}
+
+div.card {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+div.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+
+div.container {
+    padding: 10px;
+}
+
+p.clip {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid rebeccapurple;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+p.ellipsis {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid rebeccapurple;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p.ellipsis:hover {
+    overflow: visible;
+}
+
+div.transition {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+
+div.transition:hover {
+    width: 300px;
+}
+
+@keyframes animation {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+div.animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
 }
